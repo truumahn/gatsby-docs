@@ -1,0 +1,16 @@
+- title: About
+  link: /about
+  items:
+    - title: First item
+      link: /about/item1
+    - title: Second item
+      link: /about/item2
+- title: How to
+  link: /how-to
+  items:
+    - title: First item
+      link: /how-to/item1
+    - title: Add new docs
+      link: /how-to/add-new-docs
+    - title: Second item
+      link: /how-to/item2

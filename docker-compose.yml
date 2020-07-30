@@ -1,0 +1,26 @@
+version: '3.3'
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: 'tail -f /dev/null'
+    ports:
+      - 80
+    volumes:
+      - ./:/app
+  nginx:
+    image: ${WEBSERVER_IMAGE:-wodby/nginx:1.17}
+    ports:
+      - 80
+    depends_on:
+      - node
+    environment:
+      APACHE_SERVER_ROOT: /var/www/html/
+      NGINX_STATIC_OPEN_FILE_CACHE: 'off'
+      NGINX_ERROR_LOG_LEVEL: debug
+      NGINX_SERVER_ROOT: /var/www/html/
+    volumes:
+      - ./public:/var/www/html
+    #    # Alternative for macOS users: docker-sync https://wodby.com/docs/stacks/drupal/local#docker-for-mac
+    #    - docker-sync:/var/www/html

@@ -1,0 +1,44 @@
+code[class*='language-'],
+pre[class*='language-'] {
+  font-family: Terminus, Menlo, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  tab-size: 4;
+  hyphens: none;
+  font-size: 95%;
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  white-space: pre;
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+  padding: 0.1em;
+}
+
+.token {
+  &.deleted {
+    text-decoration: line-through;
+  }
+
+  &.important,
+  &.bold {
+    font-weight: bold;
+  }
+  &.italic {
+    font-style: italic;
+  }
+
+  &.entity {
+    cursor: help;
+  }
+
+  &.namespace {
+    opacity: 0.7;
+  }
+}

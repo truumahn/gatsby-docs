@@ -1,0 +1,8 @@
+# Example:
+#
+# - fromPath: /docs/themes/api-reference/
+#   toPath: /docs/theme-api/
+# - fromPath: /docs/component-css/ # Merged Component CSS and CSS Modules
+#   toPath: /docs/css-modules/
+# - fromPath: /blog/2018-10-25-unstructured-data/
+#   toPath: /blog/2018-10-25-using-gatsby-without-graphql/
