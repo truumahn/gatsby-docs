@@ -5,7 +5,7 @@ import { Edit3 } from 'react-feather';
 
 const createEditLink = (slug, githubLink) => {
   const path = slug === '/' ? '/index.md' : slug.replace(/\/$/, '.md');
-  return `${githubLink}/edit/master${path}`;
+  return `${githubLink}/edit/master/docs${path}`;
 };
 
 const EditLink = ({ slug, githubLink }) => {
