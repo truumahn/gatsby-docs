@@ -1,7 +1,5 @@
 # Gatsby implementation for a generic docs site
 
-TODO: Create a docker service for node
-
 ## How to use
 
 ### First time setup
